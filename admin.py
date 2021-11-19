@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django_neomodel import admin as neo_admin
-from graph.models import graphnode
+from kgmodel.models import Kgmodel
 
-class GraphAdmin(admin.ModelAdmin):
+class KgModelAdmin(admin.ModelAdmin):
     list_display = ('name',)
-neo_admin.register(graphnode,GraphAdmin)
+neo_admin.register(Kgmodel,KgModelAdmin)
